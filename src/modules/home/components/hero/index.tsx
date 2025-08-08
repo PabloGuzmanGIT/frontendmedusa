@@ -19,8 +19,6 @@ const Hero = () => {
             Powered by DBH and Next.js
           </Heading>
         </span>
-
-        </a>
       </div>
     </div>
   )
