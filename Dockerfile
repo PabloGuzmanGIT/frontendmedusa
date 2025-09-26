@@ -2,22 +2,21 @@ FROM node:22-alpine
 
 WORKDIR /app
 
-# Copy package files first for better caching
+# Copy package.json
 COPY package.json ./
 
-# Clean install with npm
-RUN npm install --legacy-peer-deps --no-audit --no-fund
+# Install dependencies
+RUN npm install
 
 # Copy source code
 COPY . .
 
-RUN npm run build
+# Set environment variables for build
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 
-# Set build-time environment variable
-ARG NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY
-ENV NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY=$NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY
-
-
+# Build the application and verify .next directory exists
+RUN npm run build && ls -la .next
 
 # Expose port
 EXPOSE 8000
