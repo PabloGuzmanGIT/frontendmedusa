@@ -1,3 +1,4 @@
+
 const path = require("path")
 
 module.exports = {
@@ -9,7 +10,9 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/modules/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@medusajs/ui/dist/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,md,mdx}",
   ],
+  plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
       transitionProperty: {
@@ -158,5 +161,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-radix")()],
+  plugins: [require("tailwindcss-radix")()]
 }
