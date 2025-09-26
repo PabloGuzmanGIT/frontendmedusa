@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 
@@ -12,7 +12,7 @@ RUN npm install --legacy-peer-deps --no-audit --no-fund
 COPY . .
 
 # Build the application
-#RUN npm run build
+RUN npm run build
 
 # Expose port
 EXPOSE 8000
