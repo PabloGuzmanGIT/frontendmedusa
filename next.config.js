@@ -44,7 +44,9 @@ const nextConfig = {
     ],
   },
   experimental:{
-    
+    optimizeCss: true, // Add this to reduce CSS preload warnings
+    serverComponentsExternalPackages: ['@medusajs/framework', 'medusa-core-utils'], // If using Medusa
+    esmExternals: 'loose',
   }
 }
 
