@@ -43,7 +43,6 @@ package-lock.json
 *.tsbuildinfo
 node_modules
 
-.yarn
 .swc
 dump.rdb
 /test-results/
