@@ -56,3 +56,5 @@ dump.rdb
 /playwright/.auth
 
 .yarn/
+
+dist/
