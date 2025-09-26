@@ -11,7 +11,7 @@ RUN npm install --legacy-peer-deps --no-audit --no-fund
 # Copy source code
 COPY . .
 
-RUN npx medusa build
+RUN npm run build
 
 # Set build-time environment variable
 ARG NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY
