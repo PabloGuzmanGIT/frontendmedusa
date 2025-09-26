@@ -42,7 +42,6 @@ export type Post = {
 
 // // export type { Post }
 const API_BASE =
-  (process.env.NEXT_PUBLIC_API_BASE as string) ||
   (process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL as string) ||
   "http://localhost:9000"
 
