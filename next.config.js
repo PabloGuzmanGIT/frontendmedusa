@@ -44,7 +44,7 @@ const nextConfig = {
     ],
   },
   experimental:{
-    serverComponentsExternalPackages: ['@medusajs/framework', 'medusa-core-utils'],
+    serverExternalPackages: ['@medusajs/framework', 'medusa-core-utils'],
   },
   
 }
