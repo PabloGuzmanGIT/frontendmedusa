@@ -1,7 +1,8 @@
 import DBH from "@medusajs/js-sdk"
 
 // Defaults to standard port for DBH server
-let MEDUSA_BACKEND_URL = "http://localhost:9000"
+// let MEDUSA_BACKEND_URL = "http://localhost:9000"
+let MEDUSA_BACKEND_URL = "https://livingandesbackend-production.up.railway.app"
 
 if (process.env.MEDUSA_BACKEND_URL) {
   MEDUSA_BACKEND_URL = process.env.MEDUSA_BACKEND_URL
