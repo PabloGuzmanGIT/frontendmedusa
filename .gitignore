@@ -13,7 +13,7 @@
 /coverage
 
 # next.js
-#/.next/  I removed this because it was failing when going to prod
+/.next/
 /out/
 
 # production

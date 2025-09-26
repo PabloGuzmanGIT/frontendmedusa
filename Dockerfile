@@ -16,7 +16,7 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
 # Build the application and verify .next directory exists
-RUN npm run build && ls -la .next
+RUN npm run build
 
 # Expose port
 EXPOSE 8000
