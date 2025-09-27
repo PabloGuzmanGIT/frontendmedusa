@@ -34,6 +34,7 @@ export default async function Home(props: {
 
   return (
     <>
+      <meta name="google-site-verification" content="DB4MooPkld5oDkph2xiD__rj3qIjYZAG0tQjB_Jymbk" />
       <HeroCarousel posts={heroPosts} basePath={`/${countryCode}/blog`}/>
       
       <div className="py-12">
