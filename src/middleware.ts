@@ -15,7 +15,7 @@ async function getRegionMap(cacheId: string) {
 
   if (!BACKEND_URL) {
     throw new Error(
-      "Middleware.ts: Error fetching regions. Did you set up regions in your DBH Admin and define a MEDUSA_BACKEND_URL environment variable? Note that the variable is no longer named NEXT_PUBLIC_MEDUSA_BACKEND_URL."
+      "Middleware.ts: Error fetching regions. Did you set up regions in your DBH Admin and define a MEDUSA_BACKEND_URL environment variable? Note that the variable is no longer named MEDUSA_BACKEND_URL."
     )
   }
 
@@ -94,7 +94,7 @@ async function getCountryCode(
   } catch (error) {
     if (process.env.NODE_ENV === "development") {
       console.error(
-        "Middleware.ts: Error getting the country code. Did you set up regions in your DBH Admin and define a MEDUSA_BACKEND_URL environment variable? Note that the variable is no longer named NEXT_PUBLIC_MEDUSA_BACKEND_URL."
+        "Middleware.ts: Error getting the country code. Did you set up regions in your DBH Admin and define a MEDUSA_BACKEND_URL environment variable? Note that the variable is no longer named MEDUSA_BACKEND_URL."
       )
     }
   }

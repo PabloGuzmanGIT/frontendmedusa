@@ -20,7 +20,7 @@ export type Post = {
 // (adjust this line if your config file exports something different)
 // // const API_BASE =
 // //   (process.env.NEXT_PUBLIC_API_BASE as string) ||
-// //   (process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL as string) ||
+// //   (process.env.MEDUSA_BACKEND_URL as string) ||
 // //   "http://localhost:9000"
 
 // // export async function listPosts(locale: string, limit = 12, offset = 0) {
@@ -42,7 +42,7 @@ export type Post = {
 
 // // export type { Post }
 const API_BASE =
-  (process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL as string) ||
+  (process.env.MEDUSA_BACKEND_URL as string) ||
   "http://localhost:9000"
 
 const DEFAULT_HEADERS: HeadersInit = {}
